@@ -7,7 +7,7 @@ export async function getGroups() {
     console.log('API response: ', response)
 
     const result = await response.json()
-    console.log('API result: ', result)
+    console.log('API result: ', result.body.items)
 
-    return result
+    return result.body.items
 }

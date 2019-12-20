@@ -20,7 +20,9 @@ export class GroupsList extends React.Component {
         return(
             <div>
                 <h1>Groups</h1>
-                <p>{this.state.groups.length}</p>
+                {this.state.groups.map( group => {
+                    return <ul><li>{group.name}</li></ul>
+                })}
             </div>
         )
     }

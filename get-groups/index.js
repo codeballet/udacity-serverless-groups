@@ -20,8 +20,6 @@ exports.handler = async (event) => {
     headers: {
       'Access-Control-Allow-Origin': '*'
     },
-    body: JSON.stringify({
-      items
-    })
+    body: {items}
   };
 };
